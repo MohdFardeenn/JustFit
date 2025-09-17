@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="./assets/images/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>JustFit</title>
+</head>
+
+<body>
+    <header id="header">
+        <div>
+            <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+            <span>JustFit</span>
+        </div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#aboutUs">About Us</a>
+            <a href="#footer">Contact Us</a>
+            <a href="#classes">Classes</a>
+            <a href="#blog">Blogs</a>
+            <button class="joinBtn btn">Join Now</button>
+        </div>
+    </header>
+    <section id="form">
+        <div class="outerRing">
+            <ion-icon name="close"></ion-icon>
+                <form class="wrapper" action="/" method="post">
+                    <div class="input_field">
+                        <label>Name </label>
+                        <input type="text" class="input" id="name" name="name">
+                    </div>
+                    <div class="input_field">
+                        <label>Ph. Number </label>
+                        <input type="tel" class="input" id="phoneNumber" name="phoneNumber">
+                    </div>
+                    <div class="input_field">
+                        <label>E-mail </label>
+                        <input type="text" class="input" id="email" name="e-mail">
+                    </div>
+                    <div class="input_field">
+                        <label>Age </label>
+                        <input type="tel" class="input" id="age" name="age">
+                    </div>
+                    <div class="input_field">
+                        <label>Gender </label>
+                        <div class="custom_select">
+                            <select name="gender">
+                                <option value="">--Select--</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input_field">
+                        <label>Package </label>
+                        <div class="custom_select">
+                            <select name="package">
+                                <option value="">--Select--</option>
+                                <option value="Basic">Basic</option>
+                                <option value="Premium">Premium</option>
+                                <option value="Diamond">Diamond</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input_field">
+                        <label>Address </label>
+                        <input type="text" class="input" name="address">
+                    </div>
+                    <button class="btn" onclick="validForm()">Submit</button>
+                </form>
+        </div>
+    </section>
+    <section id="home">
+        <div class="container">
+            <div class="left">
+                <div class="doualBtns">
+                    <span>the best</span>
+                    <span>fitness club</span>
+                </div>
+                <h1>Work Hard To Get Better Life</h1>
+                <p>Today I Will Do What Others Won't, So Tomorrow I Can Accomplish What Others Cant't. </p>
+                <button class="btn">Get Started</button>
+            </div>
+            <img class="Outcircle" src="assets/images/hero-circle-one.png" alt="">
+            <img class="Incircle" src="assets/images/hero-circle-two.png" alt="">
+            <img class="human" src="assets/images/hero-banner.png" alt="">
+        </div>
+        <span class="homeSpcialBg"></span>
+    </section>
+    <section id="aboutUs">
+        <div class="container">
+            <img class="Outcircle" src="assets/images/about-circle-one.png" alt="">
+            <img class="Incircle" src="assets/images/about-circle-two.png" alt="">
+            <img class="women" src="assets/images/about-banner.png" alt="">
+            <div class="spcialBg">
+                <img src="assets/images/fitness.png" alt="">
+            </div>
+            <div class="right">
+                <span class="tag">
+                    about us
+                </span>
+                <h1 class="tagLine">
+                    Welcome To Our Fitness Gym
+                </h1>
+                <p>
+                    We are a bunch of curious and intellectual professionals who out of boredom from the monotonous
+                    routine, established Brand Beavers in Mumbai to emerge as problem solvers.
+                </p>
+                <p>
+                    Our team of entrepreneurs, thinkers, strategists, designers, and technologists will help you
+                </p>
+                <div class="coach">
+                    <div class="profile">
+                        <img src="assets/images/about-coach.jpg" alt="">
+                        <div class="name">
+                            <span>Khan_Faraz_</span>
+                            <p>our coach</p>
+                        </div>
+                    </div>
+                    <button class="btn" onclick="location.href='https://www.instagram.com/khan_faraz_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='">explore more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="classes">
+        <span class="tag">our classes</span>
+        <span class="tagLine">Fitness Classes For Every Goal</span>
+        <div class="container">
+            <div class="item weightLifting">
+                <div class="upper">
+                    <img src="assets/images/class-1.jpg" alt="">
+                </div>
+                <div class="lower">
+                    <div class="nameing">
+                        <img src="assets/images/class-icon-1.png" alt="">
+                        <span class="itemName">Weight Lifting</span>
+                    </div>
+                    <p>
+                        In weight lifting athletes compete in lifting a barbell loaded with weight plates.
+                    </p>
+                    <div class="capcity">
+                        <span>class full</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="capacityBar">
+                    </div>
+                </div>
+            </div>
+            <div class="item ardio">
+                <div class="upper">
+                    <img src="assets/images/class-2.jpg" alt="">
+                </div>
+                <div class="lower">
+                    <div class="nameing">
+                        <img src="assets/images/class-icon-2.png" alt="">
+                        <span class="itemName">Cardio & Strenght</span>
+                    </div>
+                    <p>
+                        Strength training boosts the metabolism by building lean muscle mass.
+                    </p>
+                    <div class="capcity">
+                        <span>class full</span>
+                        <span>76%</span>
+                    </div>
+                    <div class="capacityBar">
+                    </div>
+                </div>
+            </div>
+            <div class="item yoga">
+                <div class="upper">
+                    <img src="assets/images/class-3.jpg" alt="">
+                </div>
+                <div class="lower">
+                    <div class="nameing">
+                        <img src="assets/images/class-icon-3.png" alt="">
+                        <span class="itemName">Power Yoga</span>
+                    </div>
+                    <p>
+                        Power Yoga is any of several forms of energetic vinyasa-style yoga as exercise developed in
+                        America.
+                    </p>
+                    <div class="capcity">
+                        <span>class full</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="capacityBar">
+                    </div>
+                </div>
+            </div>
+            <div class="item fitnessPack">
+                <div class="upper">
+                    <img src="assets/images/class-4.jpg" alt="">
+                </div>
+                <div class="lower">
+                    <div class="nameing">
+                        <img src="assets/images/class-icon-4.png" alt="">
+                        <span class="itemName">The Fitness Pack</span>
+                    </div>
+                    <p>
+                        In Fitness Pack ... Regular exercise is one of the best things you can do for your health.
+                    </p>
+                    <div class="capcity">
+                        <span>class full</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="capacityBar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="prices">
+        <div class="container">
+            <div class="item">
+                <ion-icon name="baseball"></ion-icon>
+                <span class="packageName">basic package</span>
+                <span class="price">1,200 INR</span>
+                <ul>
+                    <li class="included">
+                        <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                        <p> 5 days in a week</p>
+                    </li>
+                    <li class="included">
+                        <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                        <p> 01 Sweet Shirt</p>
+                    </li>
+                    <li class="excluded">
+                        <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                        <p> 01 Bootle of Protein</p>
+                    </li>
+                    <li class="excluded">
+                        <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                        <p> Acess to videos</p>
+                    </li>
+                    <li class="excluded">
+                        <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                        <p> Muscle Strachng</p>
+                    </li>
+                </ul>
+                <button class="btn">Purchase now</button>
+            </div>
+            <div class="item">
+                <ion-icon name="cube"></ion-icon>
+                <span class="packageName">primume package</span>
+                <span class="price">1,600 INR</span>
+                <ul>
+                    <li class="included">
+                        <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                        <p> 5 days in a week</p>
+                    </li>
+                    <li class="included">
+                        <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                        <p> 01 Sweet Shirt</p>
+                    </li>
+                    <li class="included">
+                        <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                        <p> 01 Bootle of Protein</p>
+                    </li>
+                    <li class="excluded">
+                        <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                        <p> Acess to videos</p>
+                    </li>
+                    <li class="excluded">
+                        <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                        <p> Muscle Strachng</p>
+                    </li>
+                </ul>
+                <button class="btn">Purchase now</button>
+            </div>
+            <div class="item">
+                <ion-icon name="layers"></ion-icon>
+                <span class="packageName">diamond package</span>
+                <span class="price">2,000 INR</span>
+                <ul>
+                    <li class="included">
+                        <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                        <p> 5 days in a week</p>
+                    </li>
+                    <li class="included">
+                        <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                        <p> 01 Sweet Shirt</p>
+                    </li>
+                    <li class="included">
+                        <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                        <p> 01 Bootle of Protein</p>
+                    </li>
+                    <li class="included">
+                        <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                        <p> Acess to videos</p>
+                    </li>
+                    <li class="included">
+                        <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                        <p> Muscle Strachng</p>
+                    </li>
+                </ul>
+                <button class="btn">Purchase now</button>
+            </div>
+        </div>
+    </section>
+    <section id="blog">
+        <span class="tag">latest blog</span>
+        <span class="tagLine">Latest Blog Feed</span>
+        <div class="container">
+            <div class="item item1">
+                <div class="upper">
+                    <img src="assets/images/blog-1.jpg" alt="">
+                    <span class="date">
+                        07 JAN 23
+                    </span>
+                </div>
+                <div class="lower">
+                    <a href="https://www.inmotionoc.com/first-time-at-the-gym/" class="name">
+                        Going to the gym for the first time
+                    </a>
+                    <p>
+                        First Time at the Gym? Focus on Natural Movement · Machines for Beginners · Arrive Prepared ·
+                        Ask For A Tour · Focus on Your Body—Not Your Head · Incorporate a Warm
+                    </p>
+                    <a href="https://www.inmotionoc.com/first-time-at-the-gym/" class="moreBtn">read more</a>
+                </div>
+            </div>
+            <div class="item item2">
+                <div class="upper">
+                    <img src="assets/images/blog-2.jpg" alt="">
+                    <span class="date">
+                        16 FEB 23
+                    </span>
+                </div>
+                <div class="lower">
+                    <a href="https://goldsgym.in/blog/how-do-i-cut-down-belly-fat" class="name">
+                        How Do I Cut Down Belly Fat?
+                    </a>
+                    <p>
+                        Abs Are Made In The Kitchen. How Many Times Have You Heard Or Seen This Quote While Browsing On
+                        How To Lose Belly Fat Fast? This Holds True, Without A Proper
+                    </p>
+                    <a href="https://goldsgym.in/blog/how-do-i-cut-down-belly-fat" class="moreBtn">read more</a>
+                </div>
+            </div>
+            <div class="item item3">
+                <div class="upper">
+                    <img src="assets/images/blog-3.jpg" alt="">
+                    <span class="date">
+                        12 APRIL 23
+                    </span>
+                </div>
+                <div class="lower">
+                    <a href="https://goldsgym.in/blog/grow-nourish-sustain-through-food" class="name">
+                        Grow, Nourish, Sustain Through Food!
+
+                    </a>
+                    <p>
+                        Its Said The Basic Need Of The Individual Is Roti (Food), Kapda (Body) And Makaan (Shelter).
+                        Give A Deep Thought To This, You Will Be Amazed That Food Influences
+                    </p>
+                    <a href="https://goldsgym.in/blog/grow-nourish-sustain-through-food" class="moreBtn">read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="justFitness">
+            <div>
+                <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+                <span>JustFit</span>
+            </div>
+            <p>
+                You Need to Work Hard To Get Better Life
+            </p>
+            <div class="timeing">
+                <span class="days">Sunday - Friday</span>
+                <span class="time">6:00AM - 11:00PM</span>
+            </div>
+            <div class="timeing">
+                <span class="days">Saturday - Sunday</span>
+                <span class="time">5:00AM - 11:00PM</span>
+            </div>
+        </div>
+        <div class="contactUs">
+            <span class="tagName">
+                Contact Us
+            </span>
+            <div>
+                <ion-icon name="location"></ion-icon>
+                <span> 31, New Colony, Bijnor 246701</span>
+            </div>
+            <div>
+                <ion-icon name="call"></ion-icon>
+                <span>+91 555 234-8765</span>
+            </div>
+            <div>
+                <ion-icon name="mail"></ion-icon>
+                <span>services@justfit.com</span>
+            </div>
+        </div>
+        <div class="newsLetter">
+            <span class="tagName">
+                Our Newsletter
+            </span>
+            <form class="inputEmail">
+                <input type="email" name="" id="" placeholder="Enter your e-mail">
+                <button class="btn"><ion-icon name="chevron-forward"></ion-icon></button>
+            </form>
+            <div class="socailMedia">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-youtube"></ion-icon>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
